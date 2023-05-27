@@ -1,0 +1,27 @@
+Frameworks de css:
+https://watercss.kognise.dev/
+
+Recomendaciones: 
+
+-Siempre que estemos renderizando elementos mediante una funcion,
+lo recomendable seria que esto se genere mediante un nuevo componente.
+
+
+useRef: 
+Te permite crear una referencia mutable, que perciste(No se reinicia su valor) durante todo el 
+ciclo de vida del componente. Permite guardar cualquier valor que puedas mutar
+y que cada vez que cambia, no vuelve a renderizar el componente a diferencia del 
+useState que vuelve a renderizar el componente y ademas el useState si se reinicia su valor. 
+
+useMemo: 
+En React, el hook useMemo se utiliza para memorizar el resultado de una función o 
+cálculo costoso, evitando así su recomputación innecesaria en cada renderizado ya
+que funciona en base a dependencias.
+
+useCallback: 
+Permite simplificar la sintaxis del useMemo pensando cuando se trata de usar funciones.
+
+Debounce: 
+npm install just-debounce-it -E (Libreria)
+Es una técnica utilizada para limitar la frecuencia de ejecución de una función en respuesta
+a eventos repetidos. Normalmente se usa en situaciones en las que se desea retrasar la ejecución de una función hasta que se haya detenido una serie de eventos.
